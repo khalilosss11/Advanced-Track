@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="382" font-family="Segoe UI, Arial, sans-serif">
+<rect width="760" height="382" fill="#ffffff"/>
+<text x="20" y="26" font-size="16" font-weight="600" fill="#1d2026">Pass rate by version (latest run)</text>
+<text x="20" y="74" font-size="13" fill="#1d2026">v1 prompt / Haiku 5.5</text>
+<rect x="230" y="56" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="56" width="369.8" height="26" fill="#b4232c"/>
+<text x="607.8" y="74" font-size="13" fill="#1d2026">80.4%</text>
+<text x="20" y="120" font-size="13" fill="#1d2026">v2 prompt / Haiku 5.5</text>
+<rect x="230" y="102" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="102" width="369.8" height="26" fill="#b4232c"/>
+<text x="607.8" y="120" font-size="13" fill="#1d2026">80.4%</text>
+<text x="20" y="166" font-size="13" fill="#1d2026">v3 prompt / Haiku 5.5</text>
+<rect x="230" y="148" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="148" width="414.9" height="26" fill="#b4232c"/>
+<text x="652.9" y="166" font-size="13" fill="#1d2026">90.2%</text>
+<text x="20" y="212" font-size="13" fill="#1d2026">v4 prompt / Haiku 5.5</text>
+<rect x="230" y="194" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="194" width="424.1" height="26" fill="#b4232c"/>
+<text x="662.1" y="212" font-size="13" fill="#1d2026">92.2%</text>
+<text x="20" y="258" font-size="13" fill="#1d2026">v5 prompt / Haiku 5.5</text>
+<rect x="230" y="240" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="240" width="437.5" height="26" fill="#b4232c"/>
+<text x="675.5" y="258" font-size="13" fill="#1d2026">95.1%</text>
+<text x="20" y="304" font-size="13" fill="#1d2026">v4 prompt / Sonnet 5.5</text>
+<rect x="230" y="286" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="286" width="460.0" height="26" fill="#b4232c"/>
+<text x="698.0" y="304" font-size="13" fill="#1d2026">100.0%</text>
+<text x="20" y="350" font-size="13" fill="#1d2026">v5 prompt / Sonnet 5.5</text>
+<rect x="230" y="332" width="460.0" height="26" fill="#eef0f3"/>
+<rect x="230" y="332" width="460.0" height="26" fill="#b4232c"/>
+<text x="698.0" y="350" font-size="13" fill="#1d2026">100.0%</text>
+</svg>

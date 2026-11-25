@@ -1,0 +1,49 @@
+# Runs the BeanBox testing pipeline on demand and commits the updated pass-rate history.
+# Not enabled by default: it needs a repository secret named ANTHROPIC_API_KEY.
+# Start it from the Actions tab ("Run workflow").
+name: BeanBox eval pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      versions:
+        description: "Comma-separated version ids from versions.json (empty = all)"
+        required: false
+        default: ""
+      repeats:
+        description: "Runs per test case"
+        required: false
+        default: "2"
+
+permissions:
+  contents: write
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install CLI client
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Run pipeline
+        working-directory: quest-2-testing-pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python pipeline.py generate
+          python pipeline.py run --repeats "${{ inputs.repeats }}" --versions "${{ inputs.versions }}"
+          python pipeline.py report
+      - name: Commit results
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add quest-2-testing-pipeline/results
+          git commit -m "Pipeline run results" || echo "No changes"
+          git push

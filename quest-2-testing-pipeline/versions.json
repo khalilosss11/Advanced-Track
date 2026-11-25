@@ -1,0 +1,53 @@
+{
+  "versions": [
+    {
+      "id": "v1-haiku",
+      "label": "v1 prompt / Haiku 5.5",
+      "model": "claude-haiku-5-5",
+      "prompt_file": "prompts/beanbox_v1.txt",
+      "notes": "Original Beginner-track prompt"
+    },
+    {
+      "id": "v2-haiku",
+      "label": "v2 prompt / Haiku 5.5",
+      "model": "claude-haiku-5-5",
+      "prompt_file": "prompts/beanbox_v2.txt",
+      "notes": "Adds no-forwarding rule, bag sizes, cancel by email (Intermediate Q1)"
+    },
+    {
+      "id": "v3-haiku",
+      "label": "v3 prompt / Haiku 5.5",
+      "model": "claude-haiku-5-5",
+      "prompt_file": "prompts/beanbox_v3.txt",
+      "notes": "Adds yes/no answer rule (Intermediate Q1)"
+    },
+    {
+      "id": "v4-haiku",
+      "label": "v4 prompt / Haiku 5.5",
+      "model": "claude-haiku-5-5",
+      "prompt_file": "prompts/beanbox_v4.txt",
+      "notes": "Adds date, confidentiality and wellbeing rules (Advanced Q1 findings F1 to F3)"
+    },
+    {
+      "id": "v5-haiku",
+      "label": "v5 prompt / Haiku 5.5",
+      "model": "claude-haiku-5-5",
+      "prompt_file": "prompts/beanbox_v5.txt",
+      "notes": "Scopes the date rule to 'today' questions (fixes the v4 billing regression) and tightens confidentiality"
+    },
+    {
+      "id": "v4-sonnet",
+      "label": "v4 prompt / Sonnet 5.5",
+      "model": "claude-sonnet-5-5",
+      "prompt_file": "prompts/beanbox_v4.txt",
+      "notes": "Same v4 prompt on a larger model"
+    },
+    {
+      "id": "v5-sonnet",
+      "label": "v5 prompt / Sonnet 5.5",
+      "model": "claude-sonnet-5-5",
+      "prompt_file": "prompts/beanbox_v5.txt",
+      "notes": "v5 prompt on a larger model"
+    }
+  ]
+}
